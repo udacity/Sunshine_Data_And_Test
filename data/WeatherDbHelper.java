@@ -18,6 +18,8 @@ package com.example.android.sunshine.app.data;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import com.example.android.sunshine.app.data.WeatherContract.LocationEntry;
+import com.example.android.sunshine.app.data.WeatherContract.WeatherEntry;
 
 /**
  * Manages a local database for weather data.
@@ -36,16 +38,14 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         /**
-         * YOUR CODE BELOW HERE FOR QUIZ
+         * TODO YOUR CODE BELOW HERE FOR QUIZ
          * QUIZ - 4a - LocationEntry
          * https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/e-1633698599/m-1633698600
          **/
 
         final String SQL_CREATE_LOCATION_TABLE = "";
 
-
-
-        /* Uncomment for
+        /* TODO Uncomment for
          4a - Create a Database for SQLiteOpenHelper
          https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/m-1633698598
         final String SQL_CREATE_WEATHER_TABLE = "CREATE TABLE " + WeatherEntry.TABLE_NAME + " (" +
@@ -84,12 +84,9 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
         */
     }
 
-
-
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
-        /* Uncomment for
+        /* TODO Uncomment for
         4a - SQLiteOpenHelper onUpgrade() method
         https://www.udacity.com/course/viewer#!/c-ud853/l-1639338560/m-1633698602
         // This database is only a cache for online data, so its upgrade policy is
@@ -103,6 +100,4 @@ public class WeatherDbHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
         */
     }
-
-
 }
